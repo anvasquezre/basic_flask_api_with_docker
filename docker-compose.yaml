@@ -6,7 +6,7 @@ services:
       args:
         - UID=${UID}
         - GID=${GID}
-      context: .\src
+      context: ./src
       target: build
     ports:
       - "80:5000"
