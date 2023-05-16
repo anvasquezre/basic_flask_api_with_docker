@@ -1,0 +1,16 @@
+version: "3.2"
+services:
+  api:
+    user: ${UID}:${GID}
+    build:
+      args:
+        - UID=${UID}
+        - GID=${GID}
+      context: .\src
+      target: build
+    ports:
+      - "80:5000"
+    environment:
+      - FLASK_APP=app
+      - FLASK_DEBUG=1
+      - FLASK_ENV=development

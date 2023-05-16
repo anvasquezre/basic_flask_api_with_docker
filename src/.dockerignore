@@ -1,0 +1,6 @@
+__pycache__
+.env
+desktop.ini
+docker-compose
+Dockerfile
+README.md

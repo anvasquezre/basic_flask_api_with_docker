@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+        <title>ASSIGMENT API</title>
+    </head>
+    <body>
+            <h1>Hello User</h1> 
+
+        <h2> This is my first Flask api </h2>
+        <p>This API will calculate the sum of 2 numbers based on this query</p>
+        <p>Parameters<br>
+            ----------<br>
+                GET: get two numbers through query parameters.<br><br>
+                     Example: curl -X GET "http://127.0.0.1:5000/sum?num1=1&num2=2"<br><br>
+                POST: get two numbers through a json file.<br><br>
+                      Example: curl -X POST -H "Content-type: application/json" -d "{\"num1\" : 1, \"num2\" : 2}" "localhost:5000/sum"<br><br>
+            Returns<br>
+            -------<br>
+                JSON response with the result
+            """
+        </p>
+
+        {% if (num1 and num2) %}
+            <h3>First number {{num1}}</h3>
+            <h3>Second number {{num2}}</h3>
+
+            <h3> Result : {{result}}</h3>
+        {% else %}
+            <p style="color: red;"> Please enter a query as explained in the documentation</p>
+        {% endif %}
+
+    </body>
+
+
+
+
+</html>
